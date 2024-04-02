@@ -126,7 +126,7 @@ stat_merged.tsv (header line + 6519 entries):
 -  [mean_vs_time.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work/mean_vs_time.ipynb). It is represented, along the evolutionary history of life, the average (for the genomes that compose each group of organisms) of the mean gene lengths against their divergence time from LUCA. Similarly, it is displayed the average (group of organisms) of the mean of the gene lengths' logarithm against the evolutionary divergence time from LUCA. That is,  $\overline{<L>}$ (nt) and $\overline{<log L>}$ (nt) vs. divergence time from LUCA (Mya).
  
 - [protCodGenes_2nd_order_momentum.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work/protCodGenes_2nd_order_momentum.ipynb). The observed generalized Taylor law for the protein coding gene length's distributions for the different genomes:  
- ($\sigma^{2} + <L>^{2}$) 
+ ($\sigma^{2} + \langle L \rangle^{2}$) 
  
  vs $<L>$ in $log_{10}$ representation; the second order momentum $<L^{2}>$ that corresponds to extended data Fig. 4 that complements the main Fig 2.  
 - [proteins_2nd_order_momentum.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work/proteins_2nd_order_momentum.ipynb) proteins_2nd_order_momentum.ipynb. The same for proteins, that is the observed generalized Taylor law for the protein length's distributions for the different species:  
