@@ -133,14 +133,20 @@ stat_merged.tsv (header line + 6519 entries):
 
 - [protCodGenes_meanOfLog_logOfMean.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work/protCodGenes_meanOfLog_logOfMean.ipynb). Comparison for the protein coding gene length's distributions for the different genomes between: the mean of the log of the lengths, $\langle log L \rangle$ , and the log of the mean of lengths, $log \langle L \rangle$, in $log_{10}$ representation; it corresponds to the Extended Data Fig. S5.  
 
- - [average_mean_lengths__order.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work/average_mean_lengths__order.ipynb). Fig 6a. Order of the average mean gene lengths for the different groups of organisms; Fig 6b. Same representations for the average protein gene lengths.  
+ - [average_mean_lengths__order.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work/average_mean_lengths__order.ipynb). Extended Data Fig. S6a. Order of the average mean gene lengths for the different groups of organisms; Fig S6b. Same representations for the average protein gene lengths.  
 
- - [meanLg_distribution__perGofOrg.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work/meanLg_distribution__perGofOrg.ipynb). Distribution of the mean gene lengths to Fungi (1014 genomes); it corresponds to the extended data Fig. 9a. Note: Fig. 9b was calculated using code from the main_work section, see [relation_proteins_protCodGenes_lengths.ipynb](https://github.com/emuro/borrador/blob/main/main_work/relation_proteins_protCodGenes_lengths.ipynb).
-- entropy.f: calculates the entropy of the allowed states of the unitary density on non-coding genetic sequences. See, Fig. S?  
-- reliability_fit.ipynb: calculates the log-likelihood that fits the different distributions compared in the figures. See Extended Data Fig. S2. 
+ - [meanLg_distribution__perGofOrg.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work/meanLg_distribution__perGofOrg.ipynb). Distribution of the mean gene lengths to Fungi (1014 genomes); it corresponds to the Extended Data Fig. S9a. Note: Fig. S9b was calculated using code from the main_work section, see [relation_proteins_protCodGenes_lengths.ipynb](https://github.com/emuro/borrador/blob/main/main_work/relation_proteins_protCodGenes_lengths.ipynb).  
+
+- reliability_fit.ipynb: calculates the log-likelihood that fits the different distributions compared in the figures. See Extended Data Fig. S2.  
+
+- entropy.f: calculates the entropy of the allowed states of the unitary density on non-coding genetic sequences. See, Extended Data Fig. S10.
+
 
 #### suppl_work__extra  
-- [merged_taylorLaw.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work__extra/merged_taylorLaw.ipynb). The observed Taylor law in the merged set for the different species for which we have records in both proteins and protein coding genes (variance vs mean in $log_{10}$ representation). This is an extension of Fig. 2.  
-- gene_growth_simulator.f for the sake of Fig. S? and Fig. S?  
-- variance.f: calculates the variance of the states of the unitary density on non-coding genetic sequences. See, Fig. S?  
-- random_scale_shape.f bla, bla, bla
+- [merged_taylorLaw.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work__extra/merged_taylorLaw.ipynb). The observed Taylor law in the merged set for the different species for which we have records in both proteins and protein coding genes (variance vs mean in $log_{10}$ representation). This is an extension of Fig. 2.
+  
+- gene_growth_simulator.f  
+
+- variance.f: calculates the variance of the states of the unitary density on non-coding genetic sequences.   
+
+- random_scale_shape.f 
