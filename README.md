@@ -4,9 +4,11 @@ This repository contains the data and programs needed to reproduce the results r
 
 **The structure of this repository is the next:**  
  - **README.md** guides you all over this repository.
+
  - **main_tables** that are needed to reproduce the main figures.  
         - **suppl_tables** for the supplementary material.  
-        - **suppl_tables__extra** some extra data that can be helpful (ie. taxonomical ids).  
+        - **suppl_tables__extra** some extra data that can be helpful (ie. taxonomical ids).
+
  - **main_work** contains the programs needed to reproduce the main results.  
         - **suppl_work**, where the programs for the supplementary material are.
         - **suppl_work__extra**, where some extra programs that complement the supplementary material are.
@@ -103,14 +105,20 @@ stat_merged.tsv (header line + 6519 entries):
 
 #### suppl_tables
 - gene_length_vs_divergenece_time.tsv
+
 - protCodGenes_averageLg_perGoOrg.txt
+
 - proteins_averageLp_perGoOrg.txt
 
 #### suppl_tables__extra
 - species_Ensembl.tsv. The file contains the taxonomy ids of the different species annotated in Ensembl, [see above](https://github.com/emuro/borrador/blob/main/README.md#taxonomy-ids-of-the-different-species-annotated-in-ensembl). The files for the different divisions have been concatenated into species_Ensembl.tsv, maintaining only the first header. Finally, the file has been slimmed-down reducing its columns to species, species name and taxonomy_id.  
+
 - genes.xlsx, proteins.xlsx, and genes_proteins_combined.xlsx. The main_tables in Microsoft Excel format, for the sake of those that use MS formats.  
+
 - 480lognormal.dat. Initial seed for the gene growth model: 5000 gene lognormally distributed with mean 480
+
 - clade_fraction_per_mean_length.xlsx data to represent Figs. S8 and S9
+
 - Homo_sapiens_CDS_nCDS.xlsx data needed to compare the length frequency distribution for coding (CDS) and non-coding (nCDS) genetic sequences, see Fig. S10
 
 ---
