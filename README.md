@@ -1,16 +1,14 @@
 # The emergence of eukaryotes as an evolutionary algorithmic phase transition
 
-This repository contains the data and programs needed to reproduce the results reported in our article. Here, it is also described how to obtain the annotations from public repositories.  
+This repository contains the data and programs needed to reproduce the results reported in our article. Here, it is also described how to obtain the annotations used in this this work from public repositories.  
 
-**The structure of this repository is the next:**  
- - **README.md** guides you all over this repository.
-
- - **main_tables** that are needed to reproduce the main figures.  
+**README.md** guides you all over this repository. **The structure of this repository is the next:**   
+ - **main_tables** needed to reproduce the main figures.  
         - **suppl_tables** for the supplementary material.  
-        - **suppl_tables__extra** some extra data that can be helpful (ie. taxonomical ids).
+        - **suppl_tables__extra** contains some extra data that can be helpful (ie. taxonomical ids).
 
- - **main_work** contains the programs needed to reproduce the main results.  
-        - **suppl_work**, where the programs for the supplementary material are.
+ - **main_work** contains the programs needed to reproduce the main results.   
+        - **suppl_work**, where the programs for the supplementary material are.  
         - **suppl_work__extra**, where some extra programs that complement the supplementary material are.
 
 ---
