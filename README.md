@@ -25,17 +25,17 @@ our_mnt_dir + /data/compressed/ + "ftp.uniprot.org/pub/databases/uniprot/current
 our_mnt_dir is the local directory where the data were downloaded.
 
 #### Protein coding genes 
-The protein coding gene annotations were obtained from different webservers provided by Ensembl: [prokaryotes (archaea, bacteria)](https://bacteria.ensembl.org), [protists](https://protists.ensembl.org), [plants](https://plants.ensembl.org), [fungi](http://fungi.ensembl.org/), [metazoa (invertebrates)](https://metazoa.ensembl.org), [vertebrates](https://ensembl.org/index.html). Then, any paraphyletic categorization in groups of organisms is already established by Ensembl. 
+The protein coding gene annotations were obtained from different webservers provided by Ensembl: [prokaryotes (Archaea, Bacteria)](https://bacteria.ensembl.org), [protists](https://protists.ensembl.org), [plants](https://plants.ensembl.org), [Fungi](http://fungi.ensembl.org/), [invertebrates](https://metazoa.ensembl.org), [vertebrates](https://ensembl.org/index.html). Any paraphyletic categorization in groups of organisms is already well established by Ensembl. 
 
 
 | Ensembl ftp site by Kingdom/division                                          | Release            |  
 | :---------------------------------------------------------------------------  | :----------------- |  
-| [prokaryotes: archaea, bacteria](http://ftp.ensemblgenomes.org/pub/bacteria/) | ensemblgenomes 49  |  
+| [Archaea, Bacteria](http://ftp.ensemblgenomes.org/pub/bacteria/) | ensemblgenomes 49  |  
 | [protists](http://ftp.ensemblgenomes.org/pub/protists/)                       | ensemblgenomes 49  |  
 | [plants](http://ftp.ensemblgenomes.org/pub/plants/)                           | ensemblgenomes 49  |  
-| [fungi](http://ftp.ensemblgenomes.org/pub/fungi/)                             | ensemblgenomes 49  |  
-| [metazoa (invertebrates)](http://ftp.ensemblgenomes.org/pub/metazoa/)                         | ensemblgenomes 49  |  
-| [vertebrates](https://ftp.ensembl.org/pub/)                                   | ensembl 98         |  
+| [Fungi](http://ftp.ensemblgenomes.org/pub/fungi/)                             | ensemblgenomes 49  |  
+| [invertebrates](http://ftp.ensemblgenomes.org/pub/metazoa/)                   | ensemblgenomes 49  |  
+| [vertebrates (Vertebrata)](https://ftp.ensembl.org/pub/)                      | ensembl 98         |  
 
 The gzip compressed *.gtf.gz (General Transfer Format) gene annotation files were downloaded for the different species preserving the structure of the directories (FTP Ensembl repositories). For instance, for _Homo sapiens_: 
 ```
@@ -45,7 +45,10 @@ our_mnt_dir + data/compressed/ + "ftp.ensembl.org/pub/release-98/gtf/homo_sapien
 our_mnt_dir is, as above, the local directory where all the data were downloaded.
 
 ##### Taxonomy ids of the different species annotated in Ensembl
-The taxonomy id of each species has been downloaded from Ensembl for each division: [prokaryotes (archaea, bacteria)](http://ftp.ensemblgenomes.org/pub/bacteria/release-49/species_EnsemblBacteria.txt), [protists](http://ftp.ensemblgenomes.org/pub/protists/release-49/species_EnsemblProtists.txt), [plants](http://ftp.ensemblgenomes.org/pub/plants/release-49/species_EnsemblPlants.txt), [fungi](http://ftp.ensemblgenomes.org/pub/fungi/release-49/species_EnsemblFungi.txt), [metazoa (invertebrates)](http://ftp.ensemblgenomes.org/pub/metazoa/release-49/species_EnsemblMetazoa.txt), [vertebrates](https://ftp.ensembl.org/pub/release-98/species_EnsemblVertebrates.txt).  
+The taxonomy id of each species has been downloaded from the corresponding release from Ensembl for each division: [Archaea, Bacteria](http://ftp.ensemblgenomes.org/pub/bacteria/release-49/species_EnsemblBacteria.txt), [protists](http://ftp.ensemblgenomes.org/pub/protists/release-49/species_EnsemblProtists.txt), [plants](http://ftp.ensemblgenomes.org/pub/plants/release-49/species_EnsemblPlants.txt), [Fungi](http://ftp.ensemblgenomes.org/pub/fungi/release-49/species_EnsemblFungi.txt), [invertebrates](http://ftp.ensemblgenomes.org/pub/metazoa/release-49/species_EnsemblMetazoa.txt), [vertebrates](https://ftp.ensembl.org/pub/release-98/species_EnsemblVertebrates.txt).  
+
+##### Genome quality
+The data from [NCBI genome](https://www.ncbi.nlm.nih.gov/genome/) was downloaded (20.6.2022) directly from [NCBI genome reports](https://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/).
 
 ---
 #### The lengths of protein coding genes and proteins
@@ -67,46 +70,48 @@ stat_protCodGenes.tsv (header line + 33627 entries):
 
 | counts | regnum                       |  
 |-----:  |:----------                   |
-| 31943  | bacteria<sup>*</sup>         |
+| 31943  | prokaryotes<sup>*</sup>      |
 | 237    | protists                     |
 | 96     | plants                       |
-| 1014   | fungi                        |
-| 115    | metazoa (invertebrates)      |
+| 1014   | Fungi                        |
+| 115    | invertebrates                |
 | 222    | vertebrates                  |
 33627 entries in total  
 
-<sup>*</sup>Note that Ensembl Bacteria is a browser for bacterial and archaeal genomes. Then, the 31943 entries are divided, using the taxonomy classification, in 30714 Bacteria and 1229 Archaea.  
+<sup>*</sup>30714 Bacteria and 1229 Archaea.  
 
 stat_proteins.tsv (header line + 9,913 entries):  
 
 | counts | domain |  
 |-----:|:-------- |
-| 330  | archaea  |
-| 7997 | bacteria |
-| 1586 | eukaryota<sup>*</sup> |
+| 330  | Archaea  |
+| 7997 | Bacteria |
+| 1586 | Eukaryota<sup>*</sup> |
 9913 entries in total
 
-<sup>*</sup>In the annotations from Uniprot, eukaryota includes: protists (156), plants (184), fungi (772), invertebrates (226), vertebrates (248). That is, the 1586 eukaryota has been classified using the taxonomy. Moreover, we validated that the last 156 species were protists, but protists is not a taxon, then we double-checked that Ensembl had them classified as protists too. 
+<sup>*</sup>In the annotations from Uniprot, Eukaryota includes: protists (156), plants (184), Fungi (772), invertebrates (226), and vertebrates (248). The 1586 Eukaryotes were classified using the taxonomic hierarchical classification (downloaded on 19.11.2021) provided by Uniprot and based in the NCBI taxonomy database (see [Lineage](https://www.uniprot.org/help/taxonomy)).
 
 stat_merged.tsv (header line + 6519 entries):  
 
 | counts | regnum      |  
 |-----:  |:----------  |
-| 5468   | bacteria    |
-| 227    | archaea     |
+| 5468   | Bacteria    |
+| 227    | Archaea     |
 | 91     | protists    |
 | 59     | plants      |
-| 533    | fungi       |
-| 49     | metazoa (invertebrates) |
+| 533    | Fungi       |
+| 49     | invertebrates |
 | 92     | vertebrates |
 6519 entries in total  
 
 #### suppl_tables
-- gene_length_vs_divergenece_time.tsv
+- stat_protCodGenes_ncbiGenomeAssemblyStatus.tsv. Assembly status for the genomes associated to the Ensembl protein coding genes entries. The file is composed by one header and 33637 entries (rows) with 3 columns: species, ensembl_assembly_accession, assembly_status.  
 
-- protCodGenes_averageLg_perGoOrg.txt
+- gene_length_vs_divergenece_time.tsv  
 
-- proteins_averageLp_perGoOrg.txt
+- protCodGenes_averageLg_perGoOrg.txt  
+
+- proteins_averageLp_perGoOrg.txt  
 
 #### suppl_tables__extra
 - species_Ensembl.tsv. The file contains the taxonomy ids of the different species annotated in Ensembl, [see above](https://github.com/emuro/borrador/blob/main/README.md#taxonomy-ids-of-the-different-species-annotated-in-ensembl). The files for the different divisions have been concatenated into species_Ensembl.tsv, maintaining only the first header. Finally, the file has been slimmed-down reducing its columns to species, species name and taxonomy_id.  
