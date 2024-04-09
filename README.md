@@ -10,7 +10,7 @@ This repository contains the data and programs needed to reproduce the results r
  - **main_work** contains the programs needed to reproduce the main results.   
         - **suppl_work**, where the programs for the supplementary material are.  
         - **suppl_work__extra**, where some extra programs that complement the supplementary material are.
-- **gl_lib**  contains some libs used by some programs of this repository
+- **gl_lib**  contains libs used by programs of this repository
 ---
 ### Data: the annotations were downloaded from public repositories
 
