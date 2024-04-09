@@ -45,7 +45,7 @@ STAT_MERGED_FILE   = MAIN_TABLES_PATH + "stat_merged.tsv"
 STAT_MERGED_MEDIAN_MODE_FILE = WORKING_ON_TABLES_PATH + "stat_merged_protCodGenes_median_mode.tsv"
 GROUP_VERT = WORKING_ON_TABLES_PATH +  "stat_protCodGenes_with_ncbiGenomeData_FerGroup.tsv"
 #
-G_NCBI_GENOME_DATA_FILE       = EXTRA_TABLES_PATH + "stat_protCodGenes_with_ncbiGenomeData.tsv"
+G_NCBI_GENOME_DATA_FILE       = SUPPL_TABLES_PATH + "stat_protCodGenes_ncbiGenomeAssemblyStatus.tsv"
 WRONG_ANNOTATIONS_MERGED_FILE = EXTRA_TABLES_PATH + "noisy_stat_merged.tsv"
 
 
