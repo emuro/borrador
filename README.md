@@ -107,22 +107,22 @@ stat_merged.tsv (header line + 6519 entries):
 #### suppl_tables
 - stat_protCodGenes_ncbiGenomeAssemblyStatus.tsv. Assembly status for the genomes associated to the Ensembl protein coding genes entries. The file is composed by one header and 33637 entries (rows) with 3 columns: species, ensembl_assembly_accession, assembly_status.  
 
-- gene_length_vs_divergenece_time.tsv  
+- gene_length_vs_divergence_time.tsv. 
 
-- protCodGenes_averageLg_perGoOrg.txt  
+- protCodGenes_averageLg_perGoOrg.txt.  
 
-- proteins_averageLp_perGoOrg.txt  
+- proteins_averageLp_perGoOrg.txt. 
 
 #### suppl_tables__extra
 - species_Ensembl.tsv. The file contains the taxonomy ids of the different species annotated in Ensembl, [see above](https://github.com/emuro/borrador/blob/main/README.md#taxonomy-ids-of-the-different-species-annotated-in-ensembl). The files for the different divisions have been concatenated into species_Ensembl.tsv, maintaining only the first header. Finally, the file has been slimmed-down reducing its columns to species, species name and taxonomy_id.  
 
 - genes.xlsx, proteins.xlsx, and genes_proteins_combined.xlsx. The main_tables in Microsoft Excel format, for the sake of those that use MS formats.  
 
-- 480lognormal.dat. Initial seed for the gene growth model: 5000 gene lognormally distributed with mean 480
+- 480lognormal.dat. Initial seed for the gene growth model: 5000 gene lognormally distributed with mean 480.
 
-- clade_fraction_per_mean_length.xlsx data to represent Figs. S8 and S9
+- clade_fraction_per_mean_length.xlsx data to represent Figs. S8 and S9.
 
-- Homo_sapiens_CDS_nCDS.xlsx data needed to compare the length frequency distribution for coding (CDS) and non-coding (nCDS) genetic sequences, see Fig. S10
+- Homo_sapiens_CDS_nCDS.xlsx data needed to compare the length frequency distribution for coding (CDS) and non-coding (nCDS) genetic sequences, see Fig. S10.
 
 ---
 ### main_work
