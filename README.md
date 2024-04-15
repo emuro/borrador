@@ -109,9 +109,9 @@ stat_merged.tsv (header line + 6519 entries):
 
 - gene_length_vs_divergence_time.tsv. 
 
-- protCodGenes_averageLg_perGoOrg.txt.  
+- protCodGenes_averageLg_perGoOrg.txt.  Groups of organisms  with at least 20 species (to compare with proteomes) and the average $<L_{g}>$ of each group in base pairs.
 
-- proteins_averageLp_perGoOrg.txt. 
+- proteins_averageLp_perGoOrg.txt. Groups of organisms with at least 20 species (to compare with proteomes) and the average $<L_{p}>$ of each group in amino acids.
 
 #### suppl_tables__extra
 - species_Ensembl.tsv. The file contains the taxonomy ids of the different species annotated in Ensembl, [see above](https://github.com/emuro/borrador/blob/main/README.md#taxonomy-ids-of-the-different-species-annotated-in-ensembl). The files for the different divisions have been concatenated into species_Ensembl.tsv, maintaining only the first header. Finally, the file has been slimmed-down reducing its columns to species, species name and taxonomy_id.  
