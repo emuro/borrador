@@ -69,13 +69,13 @@ ORG_TIME_GROUPS           = ['Archaea', 'Bacteria', 'protists', 'Fungi', 'Viridi
         'Arthropoda', 'Actinopterygii', 'Aves', 'Mammalia', 'Primates']
 COLOR_ORG_TIME_GROUPS     = [ '#002050', '#D83B01', '#FFA500', '#A80000', '#107C10', '#EF008C', 'powderblue', 'lightskyblue', 'deepskyblue', 'blue']
 # 
-ORG_MEAN_GROUPS           = ['Archaea', 'Bacteria', 'Microsporidia', 'Mucuromycota', 'Ascomycota', 'Basidiomycota', 'protists', \
-    'Viridiplantae', 'Arthropoda', 'Actinopterygii', 'Aves', 'Mammalia', 'Primates']
-#COLOR_ORG_MEAN_GROUPS     = ['#002050', '#D83B01', '#A80000', '#A80000', '#A80000', '#A80000', '#FFA500', \
-COLOR_ORG_MEAN_GROUPS     = ['#002050', 'slategray', 'mistyrose', 'darksalmon', 'coral', 'red', '#FFA500', \
-'#107C10', '#EF008C', 'powderblue', 'lightskyblue', 'deepskyblue', 'blue']
-#'#107C10', '#EF008C', '#0078D7', '#0078D7', '#0078D7', '#0078D7']
-#COLOR_ORG_TIME_GROUPS     = [ '#002050', '#D83B01', '#FFA500', '#A80000', '#107C10', '#EF008C', 'powderblue', 'lightskyblue', 'deepskyblue', 'blue']
+ORG_MEAN_GROUPS           = ['Archaea', 'Bacteria', \
+    'Microsporidia', 'Saccharomycotina', 'Mucuromycota', 'Ascomycota except Saccharomycotina', 'Basidiomycota', \
+        'protists', 'Viridiplantae', 'Arthropoda', 'Actinopterygii', 'Aves', 'Mammalia but Primates', 'Primates']
+COLOR_ORG_MEAN_GROUPS     = ['#002050', 'slategray', \
+    'mistyrose', 'salmon', 'darksalmon', 'coral', 'orangered', \
+    '#FFA500', '#107C10', '#EF008C', 'powderblue', 'lightskyblue', 'deepskyblue', 'blue']
+
 
 # Article colors
 ################
