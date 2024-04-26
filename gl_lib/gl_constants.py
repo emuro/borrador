@@ -29,8 +29,7 @@ elif system == 'Darwin':
 GIT_PROJECT_PATH        = os.path.dirname(__file__) + "/../" 
 MAIN_TABLES_PATH        = GIT_PROJECT_PATH + "main_tables/"
 SUPPL_TABLES_PATH       = MAIN_TABLES_PATH + "suppl_tables/"
-#
-##EXTRA_TABLES_PATH       = MAIN_TABLES_PATH + "more_tables/" 
+EXTRA_TABLES_PATH       = MAIN_TABLES_PATH + "suppl_tables__extra/" 
 #
 BOOL_WORKING_ON = 0
 if BOOL_WORKING_ON:
