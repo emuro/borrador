@@ -20,7 +20,7 @@ import sys
 USB_DISK_NAME = "Nubya" # or Wes
 system = list(os.uname())[0]
 if system == 'Linux':
-    base_path_in = "/media/emuro/" + USB_DISK_NAME + "/"
+    base_path_in = "/media/emuro/" + USB_DISK_NAME + "/" # point to the path where your data is
 elif system == 'Darwin':
     base_path_in = "/Volumes/" + USB_DISK_NAME + "/" 
 
@@ -30,9 +30,11 @@ GIT_PROJECT_PATH        = os.path.dirname(__file__) + "/../"
 MAIN_TABLES_PATH        = GIT_PROJECT_PATH + "main_tables/"
 SUPPL_TABLES_PATH       = MAIN_TABLES_PATH + "suppl_tables/"
 #
-EXTRA_TABLES_PATH       = MAIN_TABLES_PATH + "more_tables/" 
+##EXTRA_TABLES_PATH       = MAIN_TABLES_PATH + "more_tables/" 
 #
-WORKING_ON_TABLES_PATH  = GIT_PROJECT_PATH + "working_on_tables/"
+BOOL_WORKING_ON = 0
+if BOOL_WORKING_ON:
+    WORKING_ON_TABLES_PATH  = GIT_PROJECT_PATH + "working_on_tables/"
 #
 GENES_PROTS_LENGTH_PATH =  base_path_in + "results/geneLength/"
 
@@ -42,8 +44,9 @@ STAT_G_FILE        = MAIN_TABLES_PATH + "stat_protCodGenes.tsv"
 STAT_P_FILE        = MAIN_TABLES_PATH + "stat_proteins.tsv"
 STAT_MERGED_FILE   = MAIN_TABLES_PATH + "stat_merged.tsv"
 #
-STAT_MERGED_MEDIAN_MODE_FILE = WORKING_ON_TABLES_PATH + "stat_merged_protCodGenes_median_mode.tsv"
-GROUP_VERT = WORKING_ON_TABLES_PATH +  "stat_protCodGenes_with_ncbiGenomeData_FerGroup.tsv"
+if BOOL_WORKING_ON:
+    STAT_MERGED_MEDIAN_MODE_FILE = WORKING_ON_TABLES_PATH + "stat_merged_protCodGenes_median_mode.tsv"
+    GROUP_VERT = WORKING_ON_TABLES_PATH +  "stat_protCodGenes_with_ncbiGenomeData_FerGroup.tsv"
 #
 G_NCBI_GENOME_DATA_FILE       = SUPPL_TABLES_PATH + "stat_protCodGenes_ncbiGenomeAssemblyStatus.tsv"
 WRONG_ANNOTATIONS_MERGED_FILE = EXTRA_TABLES_PATH + "noisy_stat_merged.tsv"
