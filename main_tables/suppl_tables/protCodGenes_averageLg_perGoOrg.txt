@@ -1,16 +1,15 @@
-g_orgs	mean	count
-Archaea	834.934335	1228.0
-Bacteria	943.020605	30555.0
-Microsporidia	974.837340	30.0
-Saccharomycotina	1481.492030	247.0
-Mucoromycota	1556.128325	28.0
-#Ascomycota	1640.509240	720.0
-Ascomycota except Saccharomycotina	1723.547830	473.0
-Basidiomycota	1884.245002	213.0
-protists	2059.139453	237.0
-Viridiplantae	3681.998556	93.0
-Arthropoda	7314.754165	86.0
-Actinopterygii	16991.892429	60.0
-Aves	27877.229133	24.0
-Mammalia	44982.428558	96.0
-Primates	48594.583334	26.0
+g_orgs	mean
+Archaea	273.916034
+Bacteria	319.333116
+Microsporidia	310.827261
+Saccharomycotina	484.444831
+Mucoromycota	397.025739
+Ascomycota except Saccharomycotina	472.226746
+Basidiomycota	444.358624
+protists	518.474686
+Viridiplantae	390.588279
+Arthropoda	449.669682
+Actinopterygii	527.731067
+Aves	450.480340
+Mammalia	542.905725
+Primates	525.864757
