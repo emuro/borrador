@@ -1,6 +1,5 @@
 g_orgs	mean	count                            
 Archaea	273.916034	330.0
-
 Bacteria	319.333116	7986.0
 Microsporidia	310.827261	26.0
 Saccharomycotina	484.444831	78.0
