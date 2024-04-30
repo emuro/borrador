@@ -1,4 +1,3 @@
-# python3
 # ################################################################## #
 # constants.py (C) 2023 Mainz.
 # Author: Enrique M. Muro
@@ -72,7 +71,7 @@ ORG_TIME_GROUPS           = ['Archaea', 'Bacteria', 'protists', 'Fungi', 'Viridi
 COLOR_ORG_TIME_GROUPS     = [ '#002050', '#D83B01', '#FFA500', '#A80000', '#107C10', '#EF008C', 'powderblue', 'lightskyblue', 'deepskyblue', 'blue']
 # 
 ORG_MEAN_GROUPS           = ['Archaea', 'Bacteria', \
-    'Microsporidia', 'Saccharomycotina', 'Mucuromycota', 'Ascomycota except Saccharomycotina', 'Basidiomycota', \
+    'Microsporidia', 'Saccharomycotina', 'Mucuromycota', 'Ascomycota except Sacch.', 'Basidiomycota', \
         'protists', 'Viridiplantae', 'Arthropoda', 'Actinopterygii', 'Aves', 'Mammalia but Primates', 'Primates']
 COLOR_ORG_MEAN_GROUPS     = ['#002050', 'slategray', \
     'mistyrose', 'salmon', 'darksalmon', 'coral', 'orangered', \

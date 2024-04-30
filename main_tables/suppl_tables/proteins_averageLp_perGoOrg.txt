@@ -4,7 +4,6 @@ Bacteria	319.333116
 Microsporidia	310.827261
 Saccharomycotina	484.444831
 Mucoromycota	397.025739
-#Ascomycota	474.125173
 Ascomycota except Saccharomycotina	472.226746
 Basidiomycota	444.358624
 protists	518.474686
