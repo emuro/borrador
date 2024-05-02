@@ -78,22 +78,6 @@ COLOR_ORG_MEAN_GROUPS     = ['#002050', 'slategray', \
     '#FFA500', '#107C10', '#EF008C', 'powderblue', 'lightskyblue', 'deepskyblue', 'blue']
 
 
-# Article colors
-################
-BOOL_USE_ARTICLE_COLORS = 0
-if BOOL_USE_ARTICLE_COLORS:
-    ARTICLE_COLOR_ORG_GROUPS        = ['#FFFFFF', '#F4B183', '#FFF2CC', '#9DC3E6', '#385723', \
-                                       '#D0A8CD', '#F997CE']
-    # ARTICLE_COLOR_BORDER_ORG_GROUPS !!! Needs to reorder or eliminate the borders
-    ARTICLE_COLOR_BORDER_ORG_GROUPS = ['#D26E2A', '#000000', '#BF9000', '#A9D18E', '#3B64AD',
-                                        '#9664A0', '#C00000']  # Apply borders for better results
-    COLOR_OF = dict([(key, val) for i, (key, val) in enumerate(zip(ORG_GROUPS, ARTICLE_COLOR_ORG_GROUPS))])
-COLOR_ORG_GROUPS = []
-for g in ORG_GROUPS: #COLOR_OF:
-    COLOR_ORG_GROUPS.append(COLOR_OF[g])
-################################# colors end
-
-    
 # alpha parameter for plots 
 # not in use at the moment
 ################################# alpha start    
