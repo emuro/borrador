@@ -9,6 +9,8 @@ This repository contains the data and programs needed to reproduce the results r
 
  - **main_work** contains the programs needed to reproduce the main results.   
         - **suppl_work**, where the programs for the supplementary material are.  
+        - **suppl_work__extra**, where some extra programs that complement the supplementary material are.
+
 - **gl_lib**  contains libs used by programs of this repository
 ---
 ### Data: the annotations were downloaded from public repositories
@@ -147,13 +149,15 @@ stat_merged.tsv (header line + 6519 entries):
 
 - entropy.f: calculates the entropy of the allowed states of the unitary density on non-coding genetic sequences. See, Extended Data Fig. 10.
 
-<!---
+
 #### suppl_work__extra  
-- [merged_taylorLaw.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work__extra/merged_taylorLaw.ipynb). The observed Taylor law in the merged set for the different species for which we have records in both proteins and protein coding genes (variance vs mean in $log_{10}$ representation). This is an extension of Fig. 2.
-  
+
 - gene_growth_simulator.f  
 
-- variance.f: calculates the variance of the states of the unitary density on non-coding genetic sequences.   
-
-- random_scale_shape.f 
+<!---
+- [merged_taylorLaw.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work__extra/merged_taylorLaw.ipynb). The observed Taylor law in the merged set for the different species for which we have records in both proteins and protein coding genes (variance vs mean in $log_{10}$ representation). This is an extension of Fig. 2.
 ---!>
+
+
+
+
