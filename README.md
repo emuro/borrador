@@ -152,7 +152,7 @@ stat_merged.tsv (header line + 6519 entries):
 
 #### suppl_work__extra  
 
-- gene_growth_simulator.f: example of simulator of gene growth by a multiplicative stochastic factor.
+- gene_growth_simulator.f: example of simulator of gene growth using a multiplicative stochastic factor.
 
 <!---
 - [merged_taylorLaw.ipynb](https://github.com/emuro/borrador/blob/main/main_work/suppl_work__extra/merged_taylorLaw.ipynb). The observed Taylor law in the merged set for the different species for which we have records in both proteins and protein coding genes (variance vs mean in $log_{10}$ representation). This is an extension of Fig. 2.
